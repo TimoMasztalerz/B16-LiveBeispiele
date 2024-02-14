@@ -41,4 +41,11 @@ fun main(){
         null, 3800.15, 3150.55, 2900.35, null,
         4350.95, 2550.15, 3700.40, null, 3450.65
     )
+
+    val durchschnittsAlter = altersListe.filterNotNull().average()
+    val durchschnittsEinkommen = einkommensListe.filterNotNull().average()
+
+    println("Durchschnittsalter: $durchschnittsAlter")
+    println("Durchschnittseinkommen: $durchschnittsEinkommen")
+
 }
